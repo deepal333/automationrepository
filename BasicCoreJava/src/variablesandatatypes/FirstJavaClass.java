@@ -18,6 +18,7 @@ public class FirstJavaClass {
 		
 		//For Decimal Values
 		float f=67.8f;
+		  
 		
 		System.out.println(a);
 		

@@ -17,6 +17,12 @@ public class conditionaloperatorAnd
 			System.out.println("You are not Eligible");
 		}
 
+		
+		
+		
+		
+		
+		
 	}
 
 }
