@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Automation Suite 1">
+  <test name="Smoke">
+    <classes>
+      <class name="basicAnnotations.TestingClass2"/>
+      <class name="basicAnnotations.TestNGClass1"/>
+      <class name="basicAnnotations.TestingClass3"/>
+    </classes>
+  </test> <!-- Test -->
+  
+   <test name="Regression">
+    <classes>
+      <class name="basicAnnotations.TestingClass2"/>
+      <class name="basicAnnotations.TestNGClass1"/>
+      <class name="basicAnnotations.TestingClass3"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

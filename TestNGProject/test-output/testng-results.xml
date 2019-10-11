@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="56" started-at="2019-10-11T15:39:09Z" finished-at="2019-10-11T15:39:09Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="56" started-at="2019-10-11T15:39:09Z" finished-at="2019-10-11T15:39:09Z">
+      <class name="dataProvider.TestDataProvider1">
+        <test-method status="PASS" signature="login(java.lang.String, java.lang.String)[pri:0, instance:dataProvider.TestDataProvider1@2be94b0f]" name="login" duration-ms="15" started-at="2019-10-11T21:09:09Z" data-provider="getData" finished-at="2019-10-11T21:09:09Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Username 1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Password 1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="login(java.lang.String, java.lang.String)[pri:0, instance:dataProvider.TestDataProvider1@2be94b0f]" name="login" duration-ms="1" started-at="2019-10-11T21:09:09Z" data-provider="getData" finished-at="2019-10-11T21:09:09Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Username 2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Password 2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="login(java.lang.String, java.lang.String)[pri:0, instance:dataProvider.TestDataProvider1@2be94b0f]" name="login" duration-ms="1" started-at="2019-10-11T21:09:09Z" data-provider="getData" finished-at="2019-10-11T21:09:09Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Username 3]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Password 3]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+      </class> <!-- dataProvider.TestDataProvider1 -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
