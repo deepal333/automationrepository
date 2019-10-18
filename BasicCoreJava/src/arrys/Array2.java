@@ -1,4 +1,4 @@
-package arrys;
+ package arrys;
 
 public class Array2 
 {
