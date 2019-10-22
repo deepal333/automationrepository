@@ -1,5 +1,7 @@
 package advanceselenium;
 
+import java.util.Iterator;
+import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
@@ -14,7 +16,7 @@ import org.testng.annotations.Test;
 public class MousHover
 {
 	@Test
-	public void test()
+	public void test() throws InterruptedException
 	{
 		System.out.println("Launch chrome browser");
 
@@ -41,7 +43,35 @@ public class MousHover
 		WebDriverWait wait=new WebDriverWait(dr, 5);
 		
 		wait.until(ExpectedConditions.visibilityOf(shirt)).click();
+		Thread.sleep(2000);
 		
+		WebElement drag=dr.findElement(By.xpath("//div[@class='_3G9WVX oVjMho']/div[@class='_3aQU3C']"));
 		
+		act.dragAndDropBy(drag, 50, 0).build().perform();
+		
+				
+		String parent= dr.getWindowHandle();
+		
+		Thread.sleep(5000);
+		dr.findElement(By.xpath("//img[@class='_3togXc']")).click();
+		
+		Set<String> wins=dr.getWindowHandles();
+		
+		for(String w:wins)
+		{
+			if(!w.equals(parent))
+			dr.switchTo().window(w);
+		}
+		
+		/*Iterator<String> w=wins.iterator();
+		
+		while(w.hasNext())
+		{
+			String temp=w.next();
+			if(parent.equals(temp))
+				dr.switchTo().window(temp);
+		}*/
+		
+		dr.findElement(By.xpath("//a[text()='S']")).click();
 	}
 }
